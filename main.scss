@@ -11,23 +11,27 @@
     position: absolute; 
     top: 50%;  
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    padding: 40px;
+    padding: 30px;
     background-color: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     
     @media screen and (max-width: 479px) {
         max-width: 100%;
+        min-height: 986px;
         overflow-y: scroll;
+        transform: translate(-50%, -25%) scale(1);
     }
     @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 280px;
+        min-height: 986px;
         overflow-y: scroll;
+        transform: translate(-50%, -25%) scale(1);
     }
     @media screen and (min-width: 768px) {
         width: 568px; 
         min-height: 644px;
+        transform: translate(-50%, -50%) scale(1);
     } 
 }
 
@@ -35,10 +39,114 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    padding: 0;
+    padding: 4px;
     width: 20px;
     height: 20px;
-    background-color: white-color;
+    background-color:red($color: #000000);
     border: none;
 } 
 
+.modal-buy-now__button-close-svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.modal-buy-now__title {
+    margin: 0;
+    text-align: center;
+    color: #131313;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 768px) {    
+        font-size: 20px;
+        line-height: 1.40;
+    }
+}
+
+.modal-buy-now__products {
+    padding: 0;
+    list-style-type: none;
+    @media screen and (max-width: 767px) {
+        margin: 20px 0 0 0;
+    }
+    @media screen and (min-width: 768px) { 
+        display: flex;   
+        margin: 40px 0 0 0;
+    }
+}
+
+
+.modal-buy-now__form-input {
+    @media screen and (max-width: 479px) {   
+        width: 100%; 
+        padding: 8px 12px 8px 12px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: 480px)and (max-width: 767px) {
+        width: 224px; 
+        padding: 8px 12px 8px 12px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: 768px) {   
+        display: block;
+        width: 368px; 
+        padding: 11px 16px 11px 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.40;
+        color: #131313;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {    
+            font-size: 14px;
+        }
+    }
+}
+
+.modal-buy-now__user-comment {
+    @media screen and (max-width: 479px) {   
+        width: 100%; 
+        padding: 8px 12px 8px 12px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: 480px)and (max-width: 767px) {
+        width: 224px; 
+        padding: 8px 12px 8px 12px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: 768px) {   
+        display: block;
+        width: 368px; 
+        padding: 11px 16px 11px 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.40;
+        color: #131313;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {    
+            font-size: 14px;
+        }
+    }
+}
